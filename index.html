@@ -59,6 +59,8 @@ font-weight:bold;
 color:white;
 text-shadow:2px 2px 5px black;
 z-index:100;
+line-height:1.5;
+padding:20px;
 }
 
 #road{
@@ -225,10 +227,14 @@ charRect.bottom > bikeRect.top+40
 
 gameOverSound.play();
 
+started = false;
+
+message.innerHTML = "GAME OVER<br>Score: " + score;
+message.style.display = "block";
+
 setTimeout(()=>{
-alert("Game Over!\nScore: "+score);
 location.reload();
-},300);
+},2000);
 
 }
 
