@@ -159,19 +159,19 @@ clearInterval(up);
 
 let down=setInterval(()=>{
 
-if(pos<=120){
+if(pos<=380){
 clearInterval(down);
 jumping=false;
 }
 
-pos-=8;
+pos-=10;
 character.style.bottom=pos+"px";
 
 },15);
 
 }
 
-pos+=8;
+pos+=10;
 character.style.bottom=pos+"px";
 
 },15);
