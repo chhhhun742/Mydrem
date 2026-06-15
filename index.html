@@ -131,7 +131,7 @@ const gameOverSound=document.getElementById("gameOverSound");
 let started=false;
 let jumping=false;
 let score=0;
-let speed=8;
+let speed=5;
 
 let topScore=localStorage.getItem("topScore") || 0;
 topText.innerHTML="Top Score: "+topScore;
@@ -211,7 +211,7 @@ topText.innerHTML="Top Score: "+topScore;
 }
 
 if(score % 5 === 0){
-speed += 0.5;
+speed += 0.2;
 }
 }
 
