@@ -220,9 +220,9 @@ const bikeRect = bike.getBoundingClientRect();
 
 if(
 bikePos < window.innerWidth-150 &&
-charRect.right > bikeRect.left+50 &&
-charRect.left < bikeRect.right-50 &&
-charRect.bottom > bikeRect.top+40
+charRect.right > bikeRect.left+20 &&
+charRect.left < bikeRect.right-20 &&
+charRect.bottom > bikeRect.top+20
 ){
 
 gameOverSound.play();
@@ -238,7 +238,7 @@ location.reload();
 
 }
 
-},20);
+},10);
 
 </script>
 
